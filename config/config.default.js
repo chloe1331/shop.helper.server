@@ -11,6 +11,12 @@ module.exports = appInfo => {
     config.middleware = [];
 
     config.models = model({
+        'dialectOptions': {
+            charset: 'utf8mb4',
+            collate: 'utf8mb4_unicode_ci',
+            supportBigNumbers: true,
+            bigNumberStrings: true
+        },
         host: 'localhost',
         database: 'shop_helper',
         username: 'root',
