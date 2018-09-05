@@ -37,7 +37,9 @@ module.exports = (config, sync = false) => {
             const _model = sequelize.define(name.toLowerCase(), modelClass.attributes, {
                 tableName: modelClass.tableName,
                 createdAt: false,
-                updatedAt: false
+                updatedAt: false,
+                charset: 'utf8',
+                collate: 'utf8_general_ci'
             });
             models[name] = new modelClass(_model);
 

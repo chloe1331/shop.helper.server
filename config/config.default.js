@@ -11,22 +11,6 @@ module.exports = appInfo => {
     config.middleware = [];
 
     config.models = model({
-        // 'dialectOptions': {
-        //     charset: 'utf8mb4',
-        //     collate: 'utf8mb4_unicode_ci',
-        //     supportBigNumbers: true,
-        //     bigNumberStrings: true
-        // },
-        define: {
-            underscored: false,
-            freezeTableName: false,
-            charset: 'utf8',
-            dialectOptions: {
-                collate: 'utf8_general_ci'
-            },
-            timestamps: true
-        },
-
         host: 'localhost',
         database: 'shop_helper',
         username: 'root',
